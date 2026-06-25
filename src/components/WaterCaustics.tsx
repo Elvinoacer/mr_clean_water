@@ -282,10 +282,10 @@ export default function WaterCaustics() {
       }}
     >
       <Canvas
-        dpr={Math.min(window.devicePixelRatio, 2)}
+        dpr={[0.5, 1.25]}
         camera={{ position: [0, 0, 2.5], fov: 75, near: 0.1, far: 100 }}
         style={{ width: '100%', height: '100%' }}
-        gl={{ antialias: false, alpha: false }}
+        gl={{ antialias: false, alpha: false, powerPreference: 'high-performance' }}
       >
         <CausticsPlane />
       </Canvas>

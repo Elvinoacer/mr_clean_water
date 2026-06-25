@@ -17,12 +17,12 @@ export default function Hero() {
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    tl.to(captionRef.current, { opacity: 1, y: 0, duration: 0.6 })
-      .fromTo(line1Ref.current, { yPercent: 120 }, { yPercent: 0, duration: 1.2, ease: 'power4.out' }, 0.2)
-      .fromTo(line2Ref.current, { yPercent: 120 }, { yPercent: 0, duration: 1.2, ease: 'power4.out' }, 0.35)
-      .to(subRef.current, { opacity: 1, y: 0, duration: 0.8 }, 0.5)
-      .to(ctaRef.current, { opacity: 1, y: 0, duration: 0.6 }, 0.7)
-      .to(imageRef.current, { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' }, 0.4);
+    tl.to(captionRef.current, { opacity: 1, y: 0, duration: 0.4 })
+      .fromTo(line1Ref.current, { yPercent: 120 }, { yPercent: 0, duration: 0.6, ease: 'power4.out' }, 0)
+      .fromTo(line2Ref.current, { yPercent: 120 }, { yPercent: 0, duration: 0.6, ease: 'power4.out' }, 0.1)
+      .to(subRef.current, { opacity: 1, y: 0, duration: 0.5 }, 0.2)
+      .to(ctaRef.current, { opacity: 1, y: 0, duration: 0.4 }, 0.3)
+      .to(imageRef.current, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, 0.2);
 
     // Floating animation for the image
     gsap.to(imageRef.current, {
