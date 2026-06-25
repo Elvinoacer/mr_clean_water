@@ -60,9 +60,22 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: '#002B3D', minHeight: '100vh' }}>
       {/* Water Caustics Background - Fixed behind hero */}
-      <Suspense fallback={null}>
+      <Suspense fallback={
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100vh',
+          zIndex: 0,
+          backgroundImage: 'url(/images/preview_image_url.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.5)',
+        }} />
+      }>
         <WaterCaustics />
       </Suspense>
 
