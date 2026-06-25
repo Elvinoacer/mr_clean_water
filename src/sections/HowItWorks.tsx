@@ -83,7 +83,8 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       ref={sectionRef}
-      style={{ background: '#007DA0', padding: '120px 64px', position: 'relative', zIndex: 2 }}
+      className="px-6 py-16 md:px-16 md:py-28"
+      style={{ background: '#007DA0', position: 'relative', zIndex: 2 }}
     >
       <div className="mx-auto" style={{ maxWidth: 1280 }}>
         {/* Section Header */}

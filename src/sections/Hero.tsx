@@ -64,10 +64,10 @@ export default function Hero() {
     <section
       id="hero"
       ref={sectionRef}
-      className="relative flex items-center"
-      style={{ height: '100vh', zIndex: 1 }}
+      className="relative flex items-center min-h-screen pt-28 lg:pt-0 pb-16 lg:pb-0"
+      style={{ zIndex: 1 }}
     >
-      <div className="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ maxWidth: 1280, padding: '0 64px' }}>
+      <div className="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center px-6 md:px-16" style={{ maxWidth: 1280 }}>
         {/* Left Column: Text Content */}
         <div>
           {/* Caption */}
@@ -114,14 +114,12 @@ export default function Hero() {
         >
           <a
             href="tel:0724755580"
-            className="inline-flex items-center transition-all duration-200 hover:scale-[1.03]"
+            className="inline-flex items-center transition-all duration-200 hover:scale-[1.03] px-6 py-3 md:px-8 md:py-4 text-sm md:text-base whitespace-nowrap"
             style={{
               background: '#00D26A',
               color: '#004863',
               borderRadius: 100,
-              padding: '16px 32px',
               fontWeight: 600,
-              fontSize: 16,
               letterSpacing: '0.02em',
             }}
           >
@@ -132,16 +130,13 @@ export default function Hero() {
               const el = document.getElementById('services');
               el?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-flex items-center transition-all duration-200"
+            className="inline-flex items-center transition-all duration-200 px-6 py-3 md:px-8 md:py-4 text-sm md:text-base whitespace-nowrap"
             style={{
               background: 'transparent',
               color: '#fff',
               borderRadius: 100,
-              padding: '16px 32px',
+              border: '1px solid rgba(255,255,255,0.2)',
               fontWeight: 600,
-              fontSize: 16,
-              letterSpacing: '0.02em',
-              border: '1.5px solid rgba(255,255,255,0.4)',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = '#fff';

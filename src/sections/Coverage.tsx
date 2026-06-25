@@ -52,7 +52,8 @@ export default function Coverage() {
     <section
       id="coverage"
       ref={sectionRef}
-      style={{ background: '#F0F8F5', padding: '120px 64px', position: 'relative', zIndex: 2 }}
+      className="px-6 py-16 md:px-16 md:py-28"
+      style={{ background: '#F0F8F5', position: 'relative', zIndex: 2 }}
     >
       <div className="mx-auto" style={{ maxWidth: 1280 }}>
         {/* Section Header */}
@@ -94,14 +95,12 @@ export default function Coverage() {
             href="https://wa.me/254724755580"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center transition-all duration-200 hover:scale-[1.02]"
+            className="inline-flex items-center transition-all duration-200 hover:scale-[1.02] px-6 py-3 md:px-8 md:py-4 text-sm md:text-base whitespace-nowrap"
             style={{
               background: '#00D26A',
               color: '#004863',
               borderRadius: 100,
-              padding: '14px 28px',
               fontWeight: 600,
-              fontSize: 16,
               letterSpacing: '0.02em',
             }}
           >

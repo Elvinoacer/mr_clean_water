@@ -48,7 +48,8 @@ export default function Stats() {
     <section
       id="about"
       ref={sectionRef}
-      style={{ background: '#004863', padding: '64px', position: 'relative', zIndex: 2 }}
+      className="px-6 py-12 md:px-16 md:py-16"
+      style={{ background: '#004863', position: 'relative', zIndex: 2 }}
     >
       <div
         className="mx-auto grid gap-8"

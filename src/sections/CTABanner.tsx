@@ -65,10 +65,9 @@ export default function CTABanner() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden px-6 py-16 md:px-16 md:py-20"
       style={{
         background: '#00D26A',
-        padding: '80px 64px',
         zIndex: 2,
       }}
     >
@@ -115,14 +114,12 @@ export default function CTABanner() {
         <a
           ref={btnRef}
           href="tel:0724755580"
-          className="inline-flex items-center flex-shrink-0 transition-all duration-200 hover:scale-[1.03]"
+          className="inline-flex items-center flex-shrink-0 transition-all duration-200 hover:scale-[1.03] px-6 py-3 md:px-8 md:py-4 text-sm md:text-base whitespace-nowrap"
           style={{
             background: '#004863',
             color: '#fff',
             borderRadius: 100,
-            padding: '18px 36px',
             fontWeight: 600,
-            fontSize: 18,
           }}
         >
           Call or WhatsApp: 0724 755 580

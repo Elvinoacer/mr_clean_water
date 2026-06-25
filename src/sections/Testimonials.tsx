@@ -50,7 +50,8 @@ export default function Testimonials() {
   return (
     <section
       ref={sectionRef}
-      style={{ background: '#004863', padding: '120px 64px', position: 'relative', zIndex: 2 }}
+      className="px-6 py-16 md:px-16 md:py-28"
+      style={{ background: '#004863', position: 'relative', zIndex: 2 }}
     >
       <div className="mx-auto" style={{ maxWidth: 1280 }}>
         {/* Section Header */}
@@ -75,11 +76,10 @@ export default function Testimonials() {
             <div
               key={t.name}
               ref={(el) => { cardsRef.current[i] = el; }}
-              className="transition-all duration-300 opacity-0 translate-y-8"
+              className="transition-all duration-300 opacity-0 translate-y-8 p-6 md:p-10"
               style={{
                 background: 'rgba(255,255,255,0.06)',
                 borderRadius: 16,
-                padding: 40,
                 border: '1px solid rgba(255,255,255,0.1)',
               }}
               onMouseEnter={(e) => {

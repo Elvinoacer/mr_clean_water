@@ -51,7 +51,7 @@ export default function Navigation({ onNavigate }: NavigationProps) {
           background: scrolled ? 'rgba(0, 72, 99, 0.85)' : 'transparent',
         }}
       >
-        <div className="mx-auto flex items-center justify-between h-full" style={{ maxWidth: 1280, padding: '0 64px' }}>
+        <div className="mx-auto flex items-center justify-between h-full px-6 md:px-16" style={{ maxWidth: 1280 }}>
           {/* Logo */}
           <button onClick={() => onNavigate('hero')} className="flex flex-col items-start leading-none">
             <span className="text-xl font-bold tracking-tight" style={{ color: '#00D26A', fontSize: 22, letterSpacing: '-0.02em' }}>MR</span>

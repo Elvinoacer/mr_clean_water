@@ -8,9 +8,9 @@ export default function Footer() {
 
   return (
     <footer
+      className="px-6 pt-16 pb-8 md:px-16 md:pt-20 md:pb-10"
       style={{
-        background: '#004863',
-        padding: '80px 64px 40px',
+        background: '#002B3D',
         position: 'relative',
         zIndex: 2,
       }}

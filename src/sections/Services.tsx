@@ -67,7 +67,8 @@ export default function Services() {
     <section
       id="services"
       ref={sectionRef}
-      style={{ background: '#F0F8F5', padding: '120px 64px', position: 'relative', zIndex: 2 }}
+      className="px-6 py-16 md:px-16 md:py-28"
+      style={{ background: '#F0F8F5', position: 'relative', zIndex: 2 }}
     >
       <div className="mx-auto" style={{ maxWidth: 1280 }}>
         {/* Section Header */}
@@ -92,13 +93,12 @@ export default function Services() {
             <div
               key={service.name}
               ref={(el) => { cardsRef.current[i] = el; }}
-              className="group transition-all duration-300 opacity-0 translate-y-10"
+              className="group transition-all duration-300 opacity-0 translate-y-10 p-6 md:p-10"
               style={{
                 background: '#fff',
                 borderRadius: 16,
-                padding: 40,
-                border: '1px solid #E8F0EC',
-                cursor: 'default',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
+                border: '1px solid rgba(0,210,106,0.1)',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-4px)';
