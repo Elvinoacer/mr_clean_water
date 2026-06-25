@@ -118,7 +118,7 @@ export default function Footer() {
         {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-caption" style={{ color: 'rgba(255,255,255,0.4)' }}>
-            2025 Mr Clean Water. All rights reserved.
+            2026 Mr Clean Water. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="text-caption transition-colors duration-200 hover:text-white" style={{ color: 'rgba(255,255,255,0.4)' }}>
